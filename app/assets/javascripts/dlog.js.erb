@@ -1,0 +1,8 @@
+<% if Rails.env == 'production' %>
+window.DLog = function (m){
+}
+<% else %>
+window.DLog = function (m){
+  console.log( m );
+}
+<% end %>
