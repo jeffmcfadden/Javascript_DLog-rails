@@ -1,6 +1,6 @@
-# JavascriptDlog::Rails
+# javascript_dlog-rails
 
-TODO: Write a gem description
+Enjoy javascript debugging output via the console in develoment but no-op it in production.
 
 ## Installation
 
@@ -16,9 +16,20 @@ Or install it yourself as:
 
     $ gem install javascript_dlog-rails
 
+Add to your application.js:
+
+    //= require dlog.js
+
 ## Usage
 
-TODO: Write usage instructions here
+    # In coffee script
+    DLog "Hello World"
+
+    //In JavaScript
+
+    DLog( "Hello World" );
+
+In production the DLog function is defined as an empty function, so your console won't be filled with debug messages.
 
 ## Contributing
 
