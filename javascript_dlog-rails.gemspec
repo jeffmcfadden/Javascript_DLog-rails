@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = JavascriptDlog::Rails::VERSION
   gem.authors       = ["Jeff McFadden"]
   gem.email         = ["jeff@forgeapps.com"]
-  gem.description   = %q{Super basic gem for defining a javascript debug function that works in development and does nothing in production.}
+  gem.description   = %q{Super basic gem for defining a javascript debug function that works in development and does nothing in production. Defines the debug function as an empty function in production for your enjoyment.}
   gem.summary       = %q{Super basic gem for defining a javascript debug function that works in development and does nothing in production.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/jeffmcfadden/Javascript_DLog-rails"
 
   gem.files         = Dir["{lib,app}/**/*"] + ["LICENSE", "README.md"]
   gem.require_paths = ["lib"]
